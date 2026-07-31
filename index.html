@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<nav class="menu">
+    <div class="logo">👟 MV_URBAN_</div>
+
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#productos">Catálogo</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
 
 <header>
     <h1>👟 Mv_urban_</h1>
     <p>Moda, calidad y comodidad al mejor precio.</p>
-    <button onclick="saludar()">toca aqui</button>
+    <button onclick="document.getElementById('productos').scrollIntoView({behavior:'smooth'})">
+🛍️ Ver catálogo
+</button>
 </header>
 <section class="banner">
     <div class="banner-texto">
@@ -20,7 +32,7 @@
         <a href="#productos" class="boton-banner">Comprar ahora</a>
     </div>
 </section>
-<section class="productos">
+<section class="productos" id="productos">
 
     <div class="producto">
         <img src="zapato1.jfif"https://via.placeholder.com/250" alt="Zapato 1">

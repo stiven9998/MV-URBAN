@@ -74,3 +74,47 @@ button:hover{
 .banner p{
     font-size: 20px;
 }
+.menu{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.3);
+}
+
+.menu .logo{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.menu a:hover{
+    color:#ff6600;
+}
+producto{
+    transition: .3s;
+}
+
+.producto:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.25);
+}
