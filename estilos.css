@@ -251,3 +251,12 @@ producto{
     margin:10px 0;
     font-size:16px;
 }
+<div id="carrito" class="carrito">
+
+<h2>🛒 Mi carrito</h2>
+
+<div id="listaCarrito"></div>
+
+<button onclick="cerrarCarrito()">Cerrar</button>
+
+</div>

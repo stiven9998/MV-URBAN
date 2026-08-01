@@ -21,10 +21,18 @@
     <div class="logo">👟 MV_URBAN_</div>
 
     <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#productos">Catálogo</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Contacto</a></li>
+        <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#productos">Catálogo</a></li>
+    <li><a href="#">Ofertas</a></li>
+    <li><a href="#">Contacto</a></li>
+
+    <li>
+        <a href="#" onclick="abrirCarrito()">
+            🛒 <span id="contador">0</span>
+        </a>
+    </li>
+</ul>
     </ul>
 </nav>
 
@@ -77,8 +85,9 @@
         <img src="zapato1.jfif"https://via.placeholder.com/250" alt="Zapato 1">
         <h3>Tenis Urban</h3>
         <p>$149.900</p>
-        <button onclick="window.open('https://wa.me/573217077859?text=Hola,%20estoy%20interesado%20en%20este%20zapato')">
+       <button onclick="agregarAlCarrito('Tenis Urban',149900); window.open('https://wa.me/573217077859')">
     Comprar
+</button>
 </button>
     </div>
 
@@ -86,8 +95,9 @@
         <img src="zapato2.jfif"https://via.placeholder.com/250" alt="Zapato 2">
         <h3>Tenis Sport</h3>
         <p>$179.900</p>
-        <button onclick="window.open('https://wa.me/573217077859?text=Hola,%20estoy%20interesado%20en%20este%20zapato')">
+        <button onclick="agregarAlCarrito('Tenis Urban',149900); window.open('https://wa.me/573217077859')">
     Comprar
+</button>
 </button>
     </div>
 
@@ -95,8 +105,9 @@
         <img src="zapato3.jfif"https://via.placeholder.com/250" alt="Zapato 3">
         <h3>Zapato urban</h3>
         <p>$199.900</p>
-        <button onclick="window.open('https://wa.me/573217077859?text=Hola,%20estoy%20interesado%20en%20este%20zapato')">
+        <button onclick="agregarAlCarrito('Tenis Urban',149900); window.open('https://wa.me/573217077859')">
     Comprar
+</button>
 </button>
     </div>
 
@@ -116,10 +127,19 @@
 <p>© 2026 MV_URBAN_. Todos los derechos reservados.</p>
 
 </footer>
+<div id="carrito" class="carrito">
 
+<h2>🛒 Mi carrito</h2>
+
+<div id="listaCarrito"></div>
+
+<button onclick="cerrarCarrito()">Cerrar</button>
 <script src="script.js"></script>
 </body>
 </html>
 <script src="script.js"></script>
+
+
+</div>
 </body>
 </html>
