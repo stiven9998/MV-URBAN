@@ -118,3 +118,38 @@ producto{
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,.25);
 }
+.botones-banner{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.boton-banner,
+.boton-whatsapp{
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.boton-banner{
+    background:#ff6600;
+    color:white;
+}
+
+.boton-banner:hover{
+    background:#e65c00;
+}
+
+.boton-whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.boton-whatsapp:hover{
+    background:#1ea952;
+}
