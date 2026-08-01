@@ -200,3 +200,54 @@ producto{
     background:#ff6600;
     transform:translateY(-3px);
 }
+.beneficios{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:50px 20px;
+    background:#f8f8f8;
+}
+
+.beneficio{
+    background:white;
+    width:280px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.beneficio:hover{
+    transform:translateY(-8px);
+}
+
+.beneficio h3{
+    margin:15px 0;
+    color:#222;
+}
+
+.beneficio p{
+    color:#666;
+    font-size:16px;
+}
+.footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:60px;
+}
+
+.footer h2{
+    font-size:36px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.footer p{
+    color:#ddd;
+    margin:10px 0;
+    font-size:16px;
+}
