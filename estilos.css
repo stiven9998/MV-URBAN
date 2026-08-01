@@ -153,3 +153,50 @@ producto{
 .boton-whatsapp:hover{
     background:#1ea952;
 }
+.buscador{
+    display:flex;
+    justify-content:center;
+    padding:25px;
+    background:#f8f8f8;
+}
+
+.buscador input{
+    width:70%;
+    max-width:600px;
+    padding:15px 20px;
+    border:2px solid #ddd;
+    border-radius:50px;
+    font-size:16px;
+    outline:none;
+    transition:0.3s;
+}
+
+.buscador input:focus{
+    border-color:#ff6600;
+    box-shadow:0 0 10px rgba(255,102,0,.3);
+}
+.categorias{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px;
+    background:#ffffff;
+}
+
+.categorias button{
+    background:#111;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.categorias button:hover{
+    background:#ff6600;
+    transform:translateY(-3px);
+}
