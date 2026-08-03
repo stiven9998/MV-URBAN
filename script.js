@@ -1,15 +1,6 @@
 function saludar() {
     alert("¡Bienvenido a mi página web!");
 }
-<div id="carrito" class="carrito">
-
-<h2>🛒 Mi carrito</h2>
-
-<div id="listaCarrito"></div>
-
-<button onclick="cerrarCarrito()">Cerrar</button>
-
-</div>
 let cantidad = 0;
 
 function abrirCarrito() {
@@ -29,4 +20,21 @@ function agregarAlCarrito(nombre, precio) {
     lista.innerHTML += `
         <p>${nombre} - $${precio}</p>
     `;
+}
+function comprarProducto(nombreProducto) {
+
+    let talla = event.target.parentElement.querySelector(".selector-talla").value;
+
+    let mensaje =
+    "Hola 👋, estoy interesado en " +
+    nombreProducto +
+    ". Talla: " +
+    talla +
+    ". ¿Está disponible?";
+
+    window.open(
+        "https://wa.me/573217077859?text=" +
+        encodeURIComponent(mensaje),
+        "_blank"
+    );
 }

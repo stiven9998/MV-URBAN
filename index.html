@@ -28,10 +28,7 @@
     <li><a href="#">Contacto</a></li>
 
     <li>
-        <a href="#" onclick="abrirCarrito()">
-            🛒 <span id="contador">0</span>
-        </a>
-    </li>
+       
 </ul>
     </ul>
 </nav>
@@ -55,6 +52,11 @@
        target="_blank">
        💬 WhatsApp
     </a>
+<a href="https://instagram.com/mv_urban_"
+class="boton-instagram"
+target="_blank">
+📸 Ver más diseños
+</a>
 </div>
     </div>
 </section>
@@ -84,33 +86,80 @@
     <div class="producto">
         <img src="zapato1.jfif"https://via.placeholder.com/250" alt="Zapato 1">
         <h3>Tenis Urban</h3>
-        <p>$149.900</p>
-       <button onclick="agregarAlCarrito('Tenis Urban',149900); window.open('https://wa.me/573217077859')">
+        <p>$160.000</p>
+<label for="talla1"><strong>Talla:</strong></label>
+
+<select id="talla1" class="selector-talla">
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+</select>
+       <button onclick="comprarProducto('Tenis Urban')">
     Comprar
-</button>
 </button>
     </div>
 
     <div class="producto">
         <img src="zapato2.jfif"https://via.placeholder.com/250" alt="Zapato 2">
         <h3>Tenis Sport</h3>
-        <p>$179.900</p>
-        <button onclick="agregarAlCarrito('Tenis Urban',149900); window.open('https://wa.me/573217077859')">
+        <p>$170.000</p>
+<label for="talla1"><strong>Talla:</strong></label>
+
+<select id="talla1" class="selector-talla">
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+</select>
+        <button onclick="comprarProducto('Tenis Sport')">
     Comprar
-</button>
 </button>
     </div>
 
     <div class="producto">
         <img src="zapato3.jfif"https://via.placeholder.com/250" alt="Zapato 3">
         <h3>Zapato urban</h3>
-        <p>$199.900</p>
-        <button onclick="agregarAlCarrito('Tenis Urban',149900); window.open('https://wa.me/573217077859')">
+        <p>$160.000</p>
+<label for="talla1"><strong>Talla:</strong></label>
+
+<select id="talla1" class="selector-talla">
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+</select>
+       <button onclick="comprarProducto('Tenis Running')">
     Comprar
 </button>
-</button>
     </div>
+ <div class="producto">
+        <img src="nike1.jpeg"https://via.placeholder.com/250" alt="nike1">
+        <h3>Zapato urban</h3>
+        <p>$160.000</p>
+<label for="talla1"><strong>Talla:</strong></label>
 
+<select id="talla1" class="selector-talla">
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+</select>
+       <button onclick="comprarProducto('Tenis Running')">
+    Comprar
+</button>
 </section>
 </section>
 
@@ -126,20 +175,9 @@
 
 <p>© 2026 MV_URBAN_. Todos los derechos reservados.</p>
 
+</section>
 </footer>
-<div id="carrito" class="carrito">
 
-<h2>🛒 Mi carrito</h2>
-
-<div id="listaCarrito"></div>
-
-<button onclick="cerrarCarrito()">Cerrar</button>
 <script src="script.js"></script>
-</body>
-</html>
-<script src="script.js"></script>
-
-
-</div>
 </body>
 </html>
