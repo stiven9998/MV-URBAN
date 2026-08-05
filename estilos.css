@@ -299,3 +299,64 @@ producto{
     }
 
 }
+/* RESPONSIVE PARA CELULARES */
+@media (max-width:768px){
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:15px;
+}
+
+.menu ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:10px;
+}
+
+.logo{
+    font-size:30px;
+}
+
+.hero h1{
+    font-size:42px;
+    text-align:center;
+}
+
+.hero p{
+    font-size:18px;
+    text-align:center;
+    padding:0 15px;
+}
+
+.hero img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.beneficios{
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.productos{
+    grid-template-columns:1fr;
+}
+
+.buscador input{
+    width:90%;
+}
+
+.categorias{
+    gap:10px;
+}
+
+.categorias button{
+    width:140px;
+}
+}
