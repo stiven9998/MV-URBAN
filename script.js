@@ -84,5 +84,7 @@ function filtrar(categoria) {
         }
 
     });
-
+document.getElementById("productos").scrollIntoView({
+    behavior: "smooth"
+});
 }
