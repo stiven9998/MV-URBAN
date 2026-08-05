@@ -51,25 +51,32 @@ button:hover{
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
     text-align:center;
 }
-.banner{
-  background-image: url("./banner.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 450px;
+.banner {
+    background: url("banner.jpg") center/cover no-repeat;
+    min-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+    padding: 20px;
 }
 
-.banner h2{
-    font-size:48px;
-    line-height:1.2;
+.banner-texto {
+    max-width: 700px;
+    width: 100%;
 }
 
-.banner p{
-    font-size: 20px;
+.banner-texto h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.banner-texto p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 .producto img {
   width: 100%;
@@ -377,4 +384,18 @@ producto{
         font-size:16px;
     }
 
+}
+@media (max-width: 768px) {
+    .banner {
+        min-height: 300px;
+        padding: 15px;
+    }
+
+    .banner-texto h2 {
+        font-size: 2rem;
+    }
+
+    .banner-texto p {
+        font-size: 1rem;
+    }
 }
