@@ -6,14 +6,12 @@
     <title>Tu Tienda de Zapatos</title>
     <link rel="stylesheet" href="estilos.css">
 <section class="buscador">
-    <input type="text" placeholder="🔍 Buscar tenis...">
+    <input type="text" id="buscador" placeholder="🔍 Buscar tenis...">
 <section class="categorias">
-    <button>Todos</button>
-    <button>Nike</button>
-    <button>Adidas</button>
-    <button>Puma</button>
-    <button>Jordan</button>
-    <button>Running</button>
+    <button onclick="filtrar('todos')">Todos</button>
+<button onclick="filtrar('nike')">Nike</button>
+<button onclick="filtrar('adidas')">Adidas</button>
+<button onclick="filtrar('puma')">Puma</button>
 </section>
 </section>
 <body>
@@ -103,7 +101,7 @@ target="_blank">
 </button>
     </div>
 
-    <div class="producto">
+    <div class="producto adidas">
         <img src="zapato2.jfif"https://via.placeholder.com/250" alt="Zapato 2">
         <h3>Tenis Adidas runing</h3>
         <p>$170.000</p>
@@ -123,7 +121,7 @@ target="_blank">
 </button>
     </div>
 
-    <div class="producto">
+    <div class="producto nike">
         <img src="zapato3.jfif"https://via.placeholder.com/250" alt="Zapato 3">
         <h3>Tenis p-6000</h3>
         <p>$160.000</p>
@@ -142,7 +140,7 @@ target="_blank">
     Comprar
 </button>
     </div>
- <div class="producto">
+ <div class="producto nike">
         <img src="nike1.jpeg"https://via.placeholder.com/250" alt="nike1">
         <h3>Tenis nike</h3>
         <p>$160.000</p>
@@ -162,7 +160,7 @@ target="_blank">
 </button>
  </div>
 
-    <div class="producto">
+    <div class="producto puma">
         <img src="puma.jpeg"https://via.placeholder.com/250" alt="puma">
         <h3>puma</h3>
         <p>$160.000</p>
@@ -181,7 +179,7 @@ target="_blank">
     Comprar
 </button>
     </div>
- <div class="producto">
+ <div class="producto nike">
         <img src="Air.jpeg"https://via.placeholder.com/250" alt="Air">
         <h3>Tenis Air for one</h3>
         <p>$135.000</p>
@@ -200,7 +198,7 @@ target="_blank">
     Comprar
 </button>
 </div>
- <div class="producto">
+ <div class="producto puma">
         <img src="cali.jpeg"https://via.placeholder.com/250" alt="zapat 4">
         <h3>puma white</h3>
         <p>$200.000</p>
@@ -242,6 +240,63 @@ target="_blank">
         <img src="new.jpeg"https://via.placeholder.com/250" alt="Zapato 6">
         <h3>Tenis new Balance</h3>
         <p>$165.000</p>
+<label for="talla1"><strong>Talla:</strong></label>
+
+<select id="talla1" class="selector-talla">
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+</select>
+       <button onclick="comprarProducto('Tenis')">
+    Comprar
+</button>
+</div>
+ <div class="producto nike">
+        <img src="zapato7.jfif"https://via.placeholder.com/250" alt="Zapato 7">
+        <h3>Tenis Nike Air Max 97 BW</h3>
+        <p>$170.000</p>
+<label for="talla1"><strong>Talla:</strong></label>
+
+<select id="talla1" class="selector-talla">
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+</select>
+       <button onclick="comprarProducto('Tenis')">
+    Comprar
+</button>
+</div>
+ <div class="producto">
+        <img src="zapato8.jfif"https://via.placeholder.com/250" alt="Zapato 8">
+        <h3>Tenis Lacoste Joggeur 2.0</h3>
+        <p>$175.000</p>
+<label for="talla1"><strong>Talla:</strong></label>
+
+<select id="talla1" class="selector-talla">
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+</select>
+       <button onclick="comprarProducto('Tenis')">
+    Comprar
+</button>
+</div>
+ <div class="producto nike">
+        <img src="zapato9.jfif"https://via.placeholder.com/250" alt="Zapato 9">
+        <h3>Tenis Nike air jordan 1</h3>
+        <p>$170.000</p>
 <label for="talla1"><strong>Talla:</strong></label>
 
 <select id="talla1" class="selector-talla">

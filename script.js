@@ -38,3 +38,51 @@ function comprarProducto(nombreProducto) {
         "_blank"
     );
 }
+// =======================
+// BUSCADOR
+// =======================
+
+const buscador = document.getElementById("buscador");
+
+if (buscador) {
+    buscador.addEventListener("keyup", function () {
+
+        const texto = buscador.value.toLowerCase();
+        const productos = document.querySelectorAll(".producto");
+
+        productos.forEach(producto => {
+
+            const nombre = producto.innerText.toLowerCase();
+
+            if (nombre.includes(texto)) {
+                producto.style.display = "block";
+            } else {
+                producto.style.display = "none";
+            }
+
+        });
+
+    });
+}
+
+// =======================
+// FILTROS POR MARCA
+// =======================
+
+function filtrar(categoria) {
+
+    const productos = document.querySelectorAll(".producto");
+
+    productos.forEach(producto => {
+
+        if (categoria === "todos") {
+            producto.style.display = "block";
+        } else if (producto.classList.contains(categoria)) {
+            producto.style.display = "block";
+        } else {
+            producto.style.display = "none";
+        }
+
+    });
+
+}
